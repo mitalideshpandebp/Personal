@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Says</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #222;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    #levelDisplay {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      color: yellow;
+    }
+
+    canvas {
+      border: 2px solid white;
+      display: block;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      background-color: #4caf50;
+      color: white;
+    }
+
+    button:disabled {
+      background-color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simon Says</h1>
+  <div id="levelDisplay">Level: 0</div>
+  <button id="startButton">Start Game</button>
+  <p id="status">Press "Start Game" to begin!</p>
+  <canvas id="gameCanvas" width="400" height="400"></canvas>
+  <script src="Demo.js"></script>
+</body>
+</html>
